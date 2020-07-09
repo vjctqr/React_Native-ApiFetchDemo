@@ -8,9 +8,21 @@ import {
 class HomeScreen extends Component{
     render(){
         return (
-            <View>
-                <Text> Hi from the Homescreen</Text>
+            <View styles={styles.homeScreenView}>
+                <Button>
+                    block={true}
+                    <Text style={{ color: 'white' }}>Search Beers</Text>
+                </Button>
             </View>
         );
     }
 }
+
+const styles = StyleSheet.create({
+    HomeScreenView: {
+        flex: 1,
+        justifyContent: 'flex-end'
+    }
+})
+
+export default HomeScreen
